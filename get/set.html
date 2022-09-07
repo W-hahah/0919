@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			// // 通过get定义名称会自动成为对象得属性
+			// var obj = {
+			// 	get www() {
+			// 		return '真美';
+			// 	},
+			// };
+			// console.log(obj);
+
+
+
+
+			// var obj1 = {
+            //     _num:0,
+			// 	get www() {
+			// 		return ++this._num;
+			// 	},
+			// };
+			// console.log(obj1);
+
+
+
+            // var obj2={
+            //     _num:0,
+            //     get num(){
+            //         return this._num;
+            //     }
+            //     ,set num(val){
+            //         console.log(val);
+            //     }
+            // }
+            // obj2.num=100;
+
+
+			var a = function() { 
+alert(a.caller); 
+} 
+var b = function() { 
+a(); 
+} 
+b();
+
+
+
+
+
+		</script>
+	</body>
+</html>

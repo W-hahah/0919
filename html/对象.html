@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			// var obj = {
+			// 	uname: '可可',
+			// 	type: '阿拉斯加犬',
+			// 	age: 5,
+			// 	color: 'brown',
+			// 	技能: ['bark',
+			// 	'showFilm',]
+			// };
+			// console.log(obj);
+
+			// var obj = new Object();/* 创建一个空对象 */
+			// obj.uname='鸣人';
+			// obj.age=19;
+			// obj.sex='男';
+			// obj.sayHi=function(){
+			//     console.log('hi~');
+			// }
+			// obj.skill='影分身术'
+			// console.log(obj);
+			// console.log(obj.sayHi);
+
+			function Hero(name, type, blood, attack) {
+				this.name = name;
+				this.type = type;
+				this.blood = blood;
+				this.attack = attack;
+			}
+
+			var 廉颇 = new Hero('廉颇', '力量型', '500血量', '攻击：近战');
+			var 后裔 = new Hero('后裔', '射手型', '100血量', '攻击：远战');
+            console.log(廉颇);
+            console.log(后裔);
+		</script>
+	</body>
+</html>

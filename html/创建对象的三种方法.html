@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 创建对象有四种方法
+    1.创建构造函数
+    2.字面量创建
+    3.自定义构造函数
+    4.工厂模式---批量的创建对象 -->
+
+
+
+<script>
+    // 构造函数创建对象（利用 new object创建对象）
+var man =new Object();
+man.name='小明',
+console.log(man);
+
+// 字面量创建
+var obj1={
+    uname:'小明',
+    age:18
+}
+console.log(obj1);
+
+// 自定义构造函数
+function Man(name,hobby){
+    this.uname=name,
+    this.hobby=hobby
+}
+
+var p1=new Man('小明','搞笑');
+console.log(p1);
+
+
+//工厂模式
+function Man1 (name){
+    var ww=new Object();
+    ww.name=name;
+return ww;
+
+}
+var a=Man1('小明');
+console.log(a);
+
+
+</script>
+</body>
+</html>
