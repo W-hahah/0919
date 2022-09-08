@@ -1,1 +1,2 @@
-git@gitee.com:cpploved/04_git.git
+ssh:  git@gitee.com:cpploved/04_git.git  
+http : https://gitee.com/cpploved/04_git.git 
