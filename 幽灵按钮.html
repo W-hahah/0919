@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			.big {
+				width: 400px;
+				height: 400px;
+				background-color: lavender;
+				position: relative;
+				margin: 200px;
+				text-align: center;
+				line-height: 400px;
+				font-size: 40px;
+				transition: all 0.3s ease-in;
+			}
+			.box1,
+			.box2 {
+				position: absolute;
+				font-size: 25px;
+				width: 0px;
+				height: 30px;
+				line-height: 30px;
+				overflow: hidden;
+				background-color: rgba(158, 217, 208, 0.419);
+				transition: all 0.8s linear;
+			}
+			.box1 {
+				top: 0;
+				left: 0;
+			}
+
+			.box2 {
+				bottom: 0;
+				right: 0;
+				/* z-index: 99; */
+			}
+			.box3,
+			.box4 {
+				position: absolute;
+				width: 30px;
+				height: 0px;
+				background-color: rgba(130, 22, 62, 0.325);
+				transition: all 0.8s linear;
+			}
+			.box3 {
+				left: 0;
+				bottom: 0;
+			}
+			.box4 {
+				top: 0;
+				right: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="big">
+			王妞妞最美❤
+			<div class="box1"></div>
+			<div class="box2"></div>
+			<div class="box3"></div>
+			<div class="box4"></div>
+		</div>
+		<script>
+			//1.获取事件源
+			var big = document.querySelector('.big');
+			var box1 = document.getElementsByClassName('box1');
+			var box2 = document.querySelector('.box2');
+			var box3 = document.querySelector('.box3');
+			var box4 = document.querySelector('.box4');
+
+			//2.注册事件
+			big.onmouseenter = function () {
+				big.style.background = 'pink';
+				big.style.color = 'hotpink';
+				box1[0].style.width = '400px';
+				box2.style.width = '400px';
+				box2.innerHTML = '对对对对对对';
+				box3.style.height = '400px';
+				box4.style.height = '400px';
+				// console.log(box2);
+			};
+			big.onmouseleave = function () {
+				big.style.background = 'hotpink';
+				big.style.color = 'deeppink';
+				box1[0].style.width = '';
+				box2.style.width = '';
+				box2.innerHTML = '';
+				box3.style.height = '';
+				box4.style.height = '';
+			};
+		</script>
+	</body>
+</html>
